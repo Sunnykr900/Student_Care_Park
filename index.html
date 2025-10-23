@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Student Care</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="https://www.facultyplus.com/wp-content/uploads/2021/11/giet-logo.jpg" alt="GIET Logo">
+                <h1>Student Care Park</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#materials">Materials</a></li>
+                    <li><a href="#upload">Upload</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h2>Your One-Stop Academic Resource Hub</h2>
+            <p>Access previous year question papers, assignments, surprise tests, quizzes, projects and more shared by your seniors and peers.</p>
+            <a href="#materials" class="btn">Browse Materials</a>
+            <a href="#upload" class="btn">Upload Resources</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">How We Help You</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-book-open"></i>
+                    <h3>PYQ Collection</h3>
+                    <p>Access previous year question papers to understand exam patterns and important questions.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-tasks"></i>
+                    <h3>Assignments</h3>
+                    <p>Find solved assignments and reference materials to complete your coursework.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-surprise"></i>
+                    <h3>Surprise Tests</h3>
+                    <p>Be prepared for unexpected tests with our collection of practice questions.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-question-circle"></i>
+                    <h3>Quizzes</h3>
+                    <p>Test your knowledge with subject-wise quizzes and self-assessment tools.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-project-diagram"></i>
+                    <h3>Projects</h3>
+                    <p>Get inspiration from completed projects across various disciplines.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Community</h3>
+                    <p>Connect with seniors and peers to collaborate and share knowledge.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Materials Section -->
+    <section class="materials" id="materials">
+        <div class="container">
+            <h2 class="section-title">Recent Materials</h2>
+            <div class="materials-grid">
+                <div class="material-card">
+                    <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="PYQ">
+                    <div class="material-card-content">
+                        <h3>Computer Science PYQ 2022</h3>
+                        <p>Previous year question papers for Computer Science semester exams.</p>
+                        <a href="#" class="download-btn">Download</a>
+                    </div>
+                </div>
+                <div class="material-card">
+                    <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Assignment">
+                    <div class="material-card-content">
+                        <h3>Data Structures Assignment</h3>
+                        <p>Solved assignments with algorithms and implementations.</p>
+                        <a href="#" class="download-btn">Download</a>
+                    </div>
+                </div>
+                <div class="material-card">
+                    <img src="https://images.unsplash.com/photo-1551269901-5c5e14c25df7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Quiz">
+                    <div class="material-card-content">
+                        <h3>DBMS Quiz Questions</h3>
+                        <p>Collection of important quiz questions for Database Management.</p>
+                        <a href="#" class="download-btn">Download</a>
+                    </div>
+                </div>
+                <div class="material-card">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Project">
+                    <div class="material-card-content">
+                        <h3>E-Commerce Project</h3>
+                        <p>Complete project documentation and source code.</p>
+                        <a href="#" class="download-btn">Download</a>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 30px;">
+                <a href="#" class="btn">View All Materials</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upload Section -->
+    <section class="upload" id="upload">
+        <div class="container">
+            <h2 class="section-title">Upload Materials</h2>
+            <div class="upload-form">
+                <form id="uploadForm">
+                    <div class="form-group">
+                        <label for="materialType">Material Type</label>
+                        <select id="materialType" required>
+                            <option value="">Select Material Type</option>
+                            <option value="pyq">Previous Year Question</option>
+                            <option value="assignment">Assignment</option>
+                            <option value="test">Surprise Test</option>
+                            <option value="quiz">Quiz</option>
+                            <option value="project">Project</option>
+                            <option value="notes">Notes</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject/Course</label>
+                        <input type="text" id="subject" placeholder="e.g., Data Structures, Mathematics III" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <textarea id="description" placeholder="Brief description of the material"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Upload File</label>
+                        <div class="file-upload" id="fileUpload">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                            <p>Click to browse or drag and drop files here</p>
+                            <input type="file" id="fileInput" style="display: none;">
+                        </div>
+                        <div id="fileName" style="margin-top: 10px;"></div>
+                    </div>
+                    <button type="submit" class="submit-btn">Upload Material</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about" style="padding: 80px 0; background-color: #ecf0f1;">
+        <div class="container">
+            <h2 class="section-title">Student Care Park</h2>
+            <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <p>Student Care Park is a platform created by students, for students. Our mission is to facilitate knowledge sharing and academic collaboration within the Student community.</p>
+                <p>We believe that by sharing resources and helping each other, we can all achieve academic excellence together.</p>
+                <p>The platform is maintained voluntarily by a group of students who are passionate about education and community building.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact" style="padding: 80px 0;">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div style="max-width: 600px; margin: 0 auto; background-color: white; padding: 30px; border-radius: 8px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" placeholder="Your message here" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="#home">Home</a>
+                    <a href="#materials">Materials</a>
+                    <a href="#upload">Upload</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Material Categories</h3>
+                    <a href="#">PYQs</a>
+                    <a href="#">Assignments</a>
+                    <a href="#">Surprise Tests</a>
+                    <a href="#">Quizzes</a>
+                    <a href="#">Projects</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                    </div>
+                    <p>Email: help@studentcare.com</p>
+                    <p>Phone: +91 9876543210</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; Student Care Park. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Upload Success Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeModal">&times;</span>
+            <div style="text-align: center; padding: 20px;">
+                <i class="fas fa-check-circle" style="font-size: 5rem; color: #2ecc71; margin-bottom: 20px;"></i>
+                <h2 style="margin-bottom: 15px;">Upload Successful!</h2>
+                <p>Thank you for contributing to the Student Care community.</p>
+                <p>Your material will be reviewed and made available soon.</p>
+                <button id="modalOkBtn" style="margin-top: 20px; padding: 10px 20px; background-color: #3498db; color: white; border: none; border-radius: 5px; cursor: pointer;">OK</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
